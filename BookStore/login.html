@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Bookstore</title>
+<link rel="stylesheet" type="text/css" href="./Bookstore/style_log.css" >
+<link rel="stylesheet" type="text/css" href="./Bookstore/style.css">
+</head>
+
+<body class="login" mycollectionplug="bind" >
+<div class="login_m">
+<div class="login_logo"><img src="./Bookstore/logo.png" width="220" height="110"  style="opacity: 0.8;"></div>
+<div class="login_boder">
+<div class="login_padding" id="login_model">
+
+  <p style="font-size:30px;font-family:Arial;text-align:center;"><b>登陆</b></p>
+  <br>
+  <p style="font-size:17px;font-family:Arial;">账号</p>
+  <label>
+    <input type="text" id="username" class="txt_input txt_input2" onfocus="if (value ==&#39;请输入手机号或者邮箱&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;请输入手机号或者邮箱&#39;}" value="请输入手机号或者邮箱">
+  </label>
+  <p style="font-size:17px;font-family:Arial;">密码</p>
+  <label>
+     <input type="password" name="textfield2" id="userpwd" class="txt_input" onfocus="if (value ==&#39;******&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;******&#39;}" value="******">
+  </label>
+ 
+   
+ 
+  <p class="forgot"style="font-size:12px;font-family:Arial;"><a id="no account" href="register.html" style="cursor:pointer">没有账号</a> <a>|</a> <a id="change password" href="change.html" style="cursor:pointer">修改密码</a> <a>|</a> <a id="iforget" href="forget.html" href="javascript:void(0);">忘记密码</a></p>
+  <div class="rem_sub">
+  <div class="rem_sub_l">
+  <input type="checkbox" name="checkbox" id="save_me">
+   <label for="checkbox""font-family:Arial;">记住我</label>
+   </div>
+    <label>
+      <input type="submit" class="sub_button" name="button" id="button" value="登陆" style="opacity: 0.7;font-family:Arial;">
+    </label>
+  </div>
+</div>
+
+<div id="forget_model" class="login_padding" style="display:none">
+   <br>
+   <p>忘记密码</p>
+   <br>
+    <label>
+    <input type="text" id="usrmail" class="txt_input txt_input2">
+   </label>
+   <!--login_padding  Sign up end-->
+</div><!--login_boder end-->
+</div><!--login_m end-->
+<br><br>
+<p align="center">Welcome to the second hand bookstore | Lijiahui manufacturing</p>
+
+</body>
+</html>
