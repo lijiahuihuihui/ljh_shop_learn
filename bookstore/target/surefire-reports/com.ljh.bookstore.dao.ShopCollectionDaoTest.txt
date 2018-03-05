@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.ljh.bookstore.dao.ShopCollectionDaoTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.085 sec <<< FAILURE! - in com.ljh.bookstore.dao.ShopCollectionDaoTest
+testUpdate(com.ljh.bookstore.dao.ShopCollectionDaoTest)  Time elapsed: 3.649 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.ljh.bookstore.dao.ShopCollectionDaoTest.testUpdate(ShopCollectionDaoTest.java:57)
+

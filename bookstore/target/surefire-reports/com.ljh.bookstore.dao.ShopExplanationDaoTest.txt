@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.ljh.bookstore.dao.ShopExplanationDaoTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.039 sec - in com.ljh.bookstore.dao.ShopExplanationDaoTest
