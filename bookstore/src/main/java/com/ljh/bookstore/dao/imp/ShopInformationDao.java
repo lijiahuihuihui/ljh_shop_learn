@@ -35,9 +35,10 @@ public class ShopInformationDao implements  IBaseDao<ShopInformationDomain>{
 		        	m.setBookPrice(rs.getInt("book_price"));
 		        	m.setBookPriceSum(rs.getInt("book_price_sum"));
 		        	m.setAddTime(rs.getString("user_id"));
+		        	return m ; 
 		        	
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

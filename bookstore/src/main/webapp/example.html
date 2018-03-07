@@ -1,0 +1,75 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>mobaihuo网站后台免费提供_www.111cn.net</title>
+<!--这里的样式的重点是指当鼠标移到三角按钮时变成手掌-->
+<style type="text/css">
+.navPoint {
+	COLOR: white;
+	CURSOR: hand;
+	FONT-FAMILY: Webdings;
+	FONT-SIZE: 9pt
+}
+.a2 {
+	BACKGROUND-COLOR: A4B6D7;
+}
+</style>
+<!--onresize 事件 发生在窗口被调整大小的时候。carnoc是左边FRAME的ID。-->
+<body style="MARGIN: 0px" scroll=no
+	onResize=javascript:parent.carnoc.location.reload()>
+	<TABLE style="BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0
+		width="100%" border=0>
+		<TR>
+			<TD align=center width="100%" height=25 bgcolor="#B1C1E0"
+				style="COLOR: #330099; font: 10.5pt"><B>mobaihuo网站后台免费提供</B>
+			</TD>
+		</TR>
+	</TABLE>
+	<!--以下代码就是重点，屏幕切换点击后相应的向左或者向右展开-->
+	<script>
+		if (self != top) {
+			top.location = self.location;
+		}
+		function switchSysBar() {
+			if (switchPoint.innerText == 3) {
+				switchPoint.innerText = 4
+				document.all("frmTitle").style.display = "none"
+			} else {
+				switchPoint.innerText = 3
+				document.all("frmTitle").style.display = ""
+			}
+		}
+	</script>
+	<!--以上代码就是重点，屏幕切换点击后相应的向左或者向右展开-->
+	<table border="0" cellPadding="0" cellSpacing="0" height="100%"
+		width="100%">
+		<tr>
+
+			<td width="30" align="middle" vAlign="center" noWrap id="frmTitle">
+				<!--注意这里的ID，它返回给上面那段javascript的--> <!--以下是左边的FRAME,你只要做一个宽为180PX的页面嵌套进去就可以了。当然你也可以修改这句里WIDTH的值为你叶子的宽度-->
+				<iframe frameBorder="0" id="carnoc" name="carnoc" scrolling=auto
+					src=""
+					style="HEIGHT: 100%; VISIBILITY: inherit; WIDTH: 180px; Z-INDEX: 2">
+				</iframe>
+			</td>
+			<!--同志们请注意下面这个TD，它的颜色就是中间跑来跑去分栏部分的颜色，你可以在这里将颜色改成与你页面融洽的颜色-->
+
+			<td width="46" bgcolor="#708EC7" style="WIDTH: 9pt">
+				<!--哈哈，看到了吧，中间的那个跑来跑去的栏实际上去一个TABLE哦！TABle的宽度就是那条栏的宽度-->
+				<table width="9" height="100%" border="0" cellpadding="0"
+					cellspacing="0">
+					<tr>
+						<td width="200" style="HEIGHT: 100%" onClick="switchSysBar()">
+							<!--这里调用上面的switchSysBar过程--> <font
+							style="FONT-SIZE: 9pt; CURSOR: default; COLOR: #ffffff"> <!--这里你可以把3改成1或者其他数字来看看就发现了是形状问题了-->
+								<span class="navPoint" id="switchPoint" title="关闭/打开左栏">3</span>
+
+								屏幕切换
+						</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="630" style="WIDTH: 100%"></td>
+		</tr>
+	</table>
+</html>

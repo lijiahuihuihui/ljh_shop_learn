@@ -34,9 +34,10 @@ public class StoreInformationDao implements  IBaseDao<StoreInformationDomain>{
 		        	m.setStoreAddress(rs.getString("store_address"));
 		        	m.setStoreIntroduce(rs.getString("store_introduce"));
 		        	m.setStoreTelephone(rs.getString("store_telephone"));
+		        	return m ; 
 		        	
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

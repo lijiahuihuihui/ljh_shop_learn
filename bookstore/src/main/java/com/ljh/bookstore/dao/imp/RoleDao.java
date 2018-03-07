@@ -32,9 +32,10 @@ public class RoleDao implements  IBaseDao<RoleDomain>{
 		        	m.setRoleName(rs.getString("role_name"));
 		        	m.setRoleSex(rs.getString("role_sex"));
 		        	m.setRolePrivilege(rs.getString("role_privilege"));
+		        	return m ; 
 		        	
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

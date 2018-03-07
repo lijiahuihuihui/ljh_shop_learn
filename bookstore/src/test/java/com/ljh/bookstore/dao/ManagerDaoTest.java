@@ -13,7 +13,7 @@ public class ManagerDaoTest {
 
 	@Test
 	public void testSelectById() {
-		ManagerDomain m = dao.selectById("7effb4b3-8b5a-4c36-9d29-ca6e658593b2")  ; 
+		ManagerDomain m = dao.selectById("7effb4b3-4c36-9d29-ca6e658593b2")  ; 
 		assertNotNull(m);
 	}
 

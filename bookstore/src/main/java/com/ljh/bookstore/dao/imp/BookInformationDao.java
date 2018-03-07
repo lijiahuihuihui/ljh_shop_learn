@@ -38,8 +38,9 @@ public class BookInformationDao implements  IBaseDao<BookInformationDomain>{
 		        	m.setBookPrice(rs.getString("book_price"));
 		        	m.setBookName(rs.getString("book_name"));	
 		        	m.setClassId(rs.getString("class_id"));
+		        	return m ; 
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

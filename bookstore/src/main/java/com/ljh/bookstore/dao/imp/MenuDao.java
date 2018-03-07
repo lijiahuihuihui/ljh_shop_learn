@@ -37,8 +37,9 @@ public class MenuDao implements IBaseDao<MenuDomain> {
 		        if(rs.next()){  
 		        	m.setId(rs.getString("id"));
 		        	m.setMenuName(rs.getString("menu_name"));
+		        	return m ; 
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

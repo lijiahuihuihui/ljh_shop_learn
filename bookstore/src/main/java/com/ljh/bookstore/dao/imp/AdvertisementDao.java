@@ -41,9 +41,9 @@ public class AdvertisementDao implements  IBaseDao<AdvertisementDomain> {
 		        	m.setAdvId(rs.getString("adv_id"));
 		        	m.setAdvName(rs.getString("adv_name"));
 		        	m.setAdvPicUrl(rs.getString("adv_pic_url"));
+		        	
+		        	 return m ; 
 		        }
-		        return m ; 
-			 
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (Exception e) {

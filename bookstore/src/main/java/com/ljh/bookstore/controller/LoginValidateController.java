@@ -10,6 +10,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.ljh.bookstore.domain.ManagerDomain;
 import com.ljh.bookstore.sevice.impl.ManagerService;
@@ -29,19 +30,32 @@ public class LoginValidateController extends HttpServlet{
     	System.out.println("username = "+username +" , password = " + password);
     	ManagerDomain manager = managerService.selectByUsernameAndPassword(username , password) ; 
     	
-    	System.out.println("manager = " + manager);
     	
-    	if(manager == null) {
-    		 response.sendRedirect("manage/login.jsp");
+    	
+    	if(manager==null) {
+    		
+            response.sendRedirect("manage/login.jsp");
+   		    System.out.println("manager = " + manager);
+            
     	}else {
-    		 response.sendRedirect("manage/dashboard.jsp");
+
+          HttpSession session = request.getSession();
+          session.setAttribute("loginName", username);
+//          request.setAttribute("name", username);
+//  		request.getRequestDispatcher( "manage/dashboard.jsp").forward(request,response); 
+//  	    response.sendRedirect("manage/dashboard.jsp");
+          response.sendRedirect("manage/dashboard.jsp");
+          System.out.println("difhei");
+
     	}
-    }
+    	     
+}
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.doGet(request, response); 
     } 
 }
+
 
 

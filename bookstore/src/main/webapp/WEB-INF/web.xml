@@ -5,6 +5,49 @@
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
 
+
+	<!-- href start -->
+	<servlet>
+		<servlet-name>HrefSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.HrefSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HrefSaveController</servlet-name>
+		<url-pattern>/manage/href/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HrefManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.HrefManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HrefManagerController</servlet-name>
+		<url-pattern>/manage/href/manager</url-pattern>
+	</servlet-mapping>
+	<!-- href end -->
+
+	<!-- menu start -->
+	<servlet>
+		<servlet-name>MenuSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.MenuSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MenuSaveController</servlet-name>
+		<url-pattern>/manage/menu/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MenuManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.MenuManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MenuManagerController</servlet-name>
+		<url-pattern>/manage/menu/manager</url-pattern>
+	</servlet-mapping>
+
+	<!-- menu end -->
+
+
 	<servlet>
 		<servlet-name>LoginController</servlet-name>
 		<servlet-class>com.ljh.bookstore.controller.LoginController</servlet-class>
@@ -22,95 +65,101 @@
 		<servlet-name>LoginValidateController</servlet-name>
 		<url-pattern>/login-validate</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>LoginOrderLIstController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.LoginOrderLIstController</servlet-class>
+		<servlet-name>OrderLIstController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.OrderLIstController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginOrderLIstController</servlet-name>
-		<url-pattern>/login-orderlist</url-pattern>
+		<servlet-name>OrderLIstController</servlet-name>
+		<url-pattern>/orderlist</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>LoginShopLIstController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.LoginShopLIstController</servlet-class>
+		<servlet-name>ShopLIstController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.ShopLIstController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginShopLIstController</servlet-name>
-		<url-pattern>/login-shoplist</url-pattern>
+		<servlet-name>ShopLIstController</servlet-name>
+		<url-pattern>/shoplist</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>LoginUserLIstController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.LoginUserLIstController</servlet-class>
+		<servlet-name>UserLIstController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.UserLIstController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginUserLIstController</servlet-name>
-		<url-pattern>/login-userlist</url-pattern>
+		<servlet-name>UserLIstController</servlet-name>
+		<url-pattern>/userlist</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>LoginRepertoryController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.LoginRepertoryController</servlet-class>
+		<servlet-name>RepertoryController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.RepertoryController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginRepertoryController</servlet-name>
-		<url-pattern>/login-repertory</url-pattern>
+		<servlet-name>RepertoryController</servlet-name>
+		<url-pattern>/repertory</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>LoginShopClassifyController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.LoginShopClassifyController</servlet-class>
+		<servlet-name>ShopClassifyController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.ShopClassifyController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginShopClassifyController</servlet-name>
-		<url-pattern>/login-shopclassify</url-pattern>
+		<servlet-name>ShopClassifyController</servlet-name>
+		<url-pattern>/shopclassify</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>LoginAddShopController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.LoginAddShopController</servlet-class>
+		<servlet-name>AddShopController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.AddShopController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginAddShopController</servlet-name>
-		<url-pattern>/login-addshop</url-pattern>
+		<servlet-name>AddShopController</servlet-name>
+		<url-pattern>/addshop</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>LoginSystemController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.LoginSystemController</servlet-class>
+		<servlet-name>SystemController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.SystemController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginSystemController</servlet-name>
-		<url-pattern>/login-system</url-pattern>
+		<servlet-name>SystemController</servlet-name>
+		<url-pattern>/system</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>LoginMessageController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.LoginMessageController</servlet-class>
+		<servlet-name>MessageController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.MessageController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginMessageController</servlet-name>
-		<url-pattern>/login-message</url-pattern>
+		<servlet-name>MessageController</servlet-name>
+		<url-pattern>/message</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>LoginCommentController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.LoginCommentController</servlet-class>
+		<servlet-name>CommentController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.CommentController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginCommentController</servlet-name>
-		<url-pattern>/login-comment</url-pattern>
+		<servlet-name>CommentController</servlet-name>
+		<url-pattern>/comment</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>LoginSignController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.LoginSignController</servlet-class>
+		<servlet-name>SignController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.SignController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginSignController</servlet-name>
-		<url-pattern>/login-sign</url-pattern>
+		<servlet-name>SignController</servlet-name>
+		<url-pattern>/sign</url-pattern>
 	</servlet-mapping>
-	
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.jsp</location>
+		>
+	</error-page>
+
 </web-app>

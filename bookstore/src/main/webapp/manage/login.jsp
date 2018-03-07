@@ -36,8 +36,7 @@
 	<div class="am-g tpl-g">
 		<!-- 风格切换 -->
 		<div class="tpl-skiner">
-			<br>
-			<br>
+			<br> <br>
 		</div>
 		<div class="tpl-login">
 			<div class="tpl-login-content">
@@ -47,14 +46,14 @@
 
 				<form class="am-form tpl-form-line-form" action="/login-validate">
 					<div class="am-form-group">
-						<input name="username" type="text" class="tpl-form-input" id="user-name"
-							placeholder="请输入账号">
+						<input name="username" type="text" class="tpl-form-input"
+							id="user-name" placeholder="请输入账号">
 
 					</div>
 
 					<div class="am-form-group">
-						<input name="password" type="password" class="tpl-form-input" id="user-password"
-							placeholder="请输入密码">
+						<input name="password" type="password" class="tpl-form-input"
+							id="user-password" placeholder="请输入密码">
 
 					</div>
 					<div class="am-form-group tpl-login-remember-me">

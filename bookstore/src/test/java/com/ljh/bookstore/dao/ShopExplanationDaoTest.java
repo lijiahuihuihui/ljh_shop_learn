@@ -23,8 +23,8 @@ public class ShopExplanationDaoTest {
 	public void testInsert() {
 		ShopExplanationDomain t = new ShopExplanationDomain() ; 	
 		
-		t.setShop_problem("vdsvk_"+System.currentTimeMillis());
-		t.setShop_answer("vdsdfhiwk_"+System.currentTimeMillis());
+		t.setShopProblem("vdsvk_"+System.currentTimeMillis());
+		t.setShopAnswer("vdsdfhiwk_"+System.currentTimeMillis());
         
 		boolean I = dao.insert(t) ; 
 		
@@ -52,8 +52,8 @@ public class ShopExplanationDaoTest {
 	@Test
 	public void testUpdate() {
 		ShopExplanationDomain t = new ShopExplanationDomain() ; 
-		t.setShop_problem_id("8d619002-aa26-4d69-8384-d4ea718eecc2");
-        t.setShop_problem("weerf");
+		t.setShopProblemId("8d619002-aa26-4d69-8384-d4ea718eecc2");
+        t.setShopProblem("weerf");
         
 		boolean i = dao.update(t) ; 
 		System.out.println("i = " +i);

@@ -34,9 +34,10 @@ public class OrderDao implements  IBaseDao<OrderDomain> {
 		        	m.setBookPrice(rs.getInt("book_price"));
 		        	m.setBookPriceSum(rs.getInt("book_price_sum"));
 		        	m.setOrderCondition(rs.getString("order_condition"));
+		        	return m ;
 
 		        }
-		        return m ; 
+		         
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

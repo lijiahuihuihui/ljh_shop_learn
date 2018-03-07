@@ -44,8 +44,9 @@ public class BookClassifyDao implements  IBaseDao<BookClassifyDomain> {
 		        if(rs.next()){  
 		        	m.setClassId(rs.getString("class_id"));
 		        	m.setClassName(rs.getString("class_name"));
+		        	return m ; 
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

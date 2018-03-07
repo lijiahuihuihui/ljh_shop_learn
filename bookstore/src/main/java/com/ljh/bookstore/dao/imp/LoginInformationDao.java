@@ -32,9 +32,10 @@ public class LoginInformationDao implements  IBaseDao<LoginInformationDomain>{
 		        	m.setLoginName(rs.getString("login_name"));
 		        	m.setLoginNum(rs.getInt("login_num"));
 		        	m.setUserId(rs.getString("user_id"));
+		        	return m ; 
 		        	
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

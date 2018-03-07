@@ -31,9 +31,10 @@ public class ShopCollectionDao implements  IBaseDao<ShopCollectionDomain>{
 		        	m.setBookId(rs.getString("book_id"));
 		        	m.setUserId(rs.getString("user_id"));
 		        	m.setCollectionId(rs.getString("collection_id"));
+		        	return m ; 
 		        	
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -34,9 +34,10 @@ public class ManagerDao implements  IBaseDao<ManagerDomain>{
 		        	m.setManagerAge(rs.getInt("manager_age"));
 		        	m.setManagerPassword(rs.getString("manager_password"));
 		        	m.setManagerNumber(rs.getInt("manager_number"));
+		        	return m ; 
 
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -211,9 +212,10 @@ public class ManagerDao implements  IBaseDao<ManagerDomain>{
 		        	m.setManagerAge(rs.getInt("manager_age"));
 		        	m.setManagerPassword(rs.getString("manager_password"));
 		        	m.setManagerNumber(rs.getInt("manager_number"));
+		        	return m ; 
 
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

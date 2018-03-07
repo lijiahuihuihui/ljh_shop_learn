@@ -33,9 +33,11 @@ public class ConsumptionDao implements  IBaseDao<ConsumptionDomain>{
 		        	m.setConMoney(rs.getString("con_money"));
 		        	m.setBookId(rs.getString("user_id"));
 		        	m.setUserId(rs.getString("add_time"));
+		        	
+		        	return m ; 
 
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

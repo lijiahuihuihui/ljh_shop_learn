@@ -35,9 +35,10 @@ public class OrderInformationDao implements  IBaseDao<OrderInformationDomain>{
 		        	m.setOrderInformationId(rs.getString("order_information_id"));
 		        	m.setUserId(rs.getString("user_id"));
 		        	m.setOrderId(rs.getString("order_id"));
+		        	return m ; 
 
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -15,10 +15,9 @@ public class AdvertisementDaoTest {
 	
 	@Test
 	public void testSelectById() {
-
-		AdvertisementDomain m = dao.selectById("1791e5ae-a00b-414d-af27-0150c34a3817")  ; 
+		AdvertisementDomain m = dao.selectById("1791e5ae-a00b-414d-af27-0150c34a38176666")  ; 
+	   System.out.println("m = "+m) ; 
 		assertNotNull(m);
-		
 	}
 
 	@Test

@@ -2,56 +2,55 @@ package com.ljh.bookstore.domain;
 
 public class UserInformationDomain {
 
-	private String  user_id ; //用户账号
-	private String  user_name ; //用户姓名
-	private String  user_sex;//用户性别
-	private int  user_age;//用户年龄
-	private String  user_password ; //用户密码
-	private String  user_address ; //用户地址
-	private int  user_number ; //用户手机号码
+	private String  userId ; //用户账号
+	private String  userName ; //用户姓名
+	private String  userSex;//用户性别
+	private int  userAge;//用户年龄
+	private String  userPassword ; //用户密码
+	private String  userAddress ; //用户地址
+	private int  userNumber ; //用户手机号码
 	private String  addTime;//
-	
-	public String getUser_id() {
-		return user_id;
+	public String getUserId() {
+		return userId;
 	}
-	public void setUser_id(String user_id) {
-		this.user_id = user_id;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
-	public String getUser_name() {
-		return user_name;
+	public String getUserName() {
+		return userName;
 	}
-	public void setUser_name(String user_name) {
-		this.user_name = user_name;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
-	public String getUser_sex() {
-		return user_sex;
+	public String getUserSex() {
+		return userSex;
 	}
-	public void setUser_sex(String user_sex) {
-		this.user_sex = user_sex;
+	public void setUserSex(String userSex) {
+		this.userSex = userSex;
 	}
-	public int getUser_age() {
-		return user_age;
+	public int getUserAge() {
+		return userAge;
 	}
-	public void setUser_age(int i) {
-		this.user_age = i;
+	public void setUserAge(int userAge) {
+		this.userAge = userAge;
 	}
-	public String getUser_password() {
-		return user_password;
+	public String getUserPassword() {
+		return userPassword;
 	}
-	public void setUser_password(String user_password) {
-		this.user_password = user_password;
+	public void setUserPassword(String userPassword) {
+		this.userPassword = userPassword;
 	}
-	public String getUser_address() {
-		return user_address;
+	public String getUserAddress() {
+		return userAddress;
 	}
-	public void setUser_address(String user_address) {
-		this.user_address = user_address;
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
 	}
-	public int getUser_number() {
-		return user_number;
+	public int getUserNumber() {
+		return userNumber;
 	}
-	public void setUser_number(int i) {
-		this.user_number = i;
+	public void setUserNumber(int userNumber) {
+		this.userNumber = userNumber;
 	}
 	public String getAddTime() {
 		return addTime;
@@ -61,9 +60,11 @@ public class UserInformationDomain {
 	}
 	@Override
 	public String toString() {
-		return "UserInformationDomain [user_id=" + user_id + ", user_name=" + user_name + ", user_sex=" + user_sex
-				+ ", user_age=" + user_age + ", user_password=" + user_password + ", user_address=" + user_address
-				+ ", user_number=" + user_number + ", addTime=" + addTime + "]";
+		return "UserInformationDomain [userId=" + userId + ", userName=" + userName + ", userSex=" + userSex
+				+ ", userAge=" + userAge + ", userPassword=" + userPassword + ", userAddress=" + userAddress
+				+ ", userNumber=" + userNumber + ", addTime=" + addTime + "]";
 	}
+	
+	
 
 }

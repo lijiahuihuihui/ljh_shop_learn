@@ -28,13 +28,14 @@ public class UrlDao implements  IBaseDao<UrlDomain>{
 			   UrlDomain m = new UrlDomain() ; 
 		        if(rs.next()){  
 		        	
-		        	m.setUrl_id(rs.getString("url_id"));
-		        	m.setUrl_name(rs.getString("url_name"));
+		        	m.setUrlId(rs.getString("url_id"));
+		        	m.setUrlName(rs.getString("url_name"));
 		        	m.setUrl(rs.getString("url"));
-		        	m.setUrl_sort(rs.getInt("url_sort"));
+		        	m.setUrlSort(rs.getInt("url_sort"));
+		        	return m ; 
 
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -59,9 +60,9 @@ public class UrlDao implements  IBaseDao<UrlDomain>{
 
 			PreparedStatement ps = con.prepareStatement(insert);
 			ps.setString(1, UUID.randomUUID().toString());
-			ps.setString(2, t.getUrl_name());
+			ps.setString(2, t.getUrlName());
 			ps.setString(3, t.getUrl());
-			ps.setDouble(4, t.getUrl_sort());
+			ps.setDouble(4, t.getUrlSort());
 			ps.setTimestamp(5, new Timestamp(System.currentTimeMillis()));
 
 			int i = ps.executeUpdate();
@@ -102,10 +103,10 @@ public class UrlDao implements  IBaseDao<UrlDomain>{
 		        while(rs.next()){  
 		        	UrlDomain m = new UrlDomain() ; 
 		        	
-		        	m.setUrl_id(rs.getString("url_id"));
-		        	m.setUrl_name(rs.getString("url_name"));
+		        	m.setUrlId(rs.getString("url_id"));
+		        	m.setUrlName(rs.getString("url_name"));
 		        	m.setUrl(rs.getString("url"));
-		        	m.setUrl_sort(rs.getInt("url_sort"));
+		        	m.setUrlSort(rs.getInt("url_sort"));
 		        	
 		        	ms.add(m) ; 
 		        }
@@ -163,8 +164,8 @@ public class UrlDao implements  IBaseDao<UrlDomain>{
 
 			PreparedStatement ps = con.prepareStatement(update);
 			
-			ps.setString(1, t.getUrl_name());
-			ps.setString(2, t.getUrl_id());
+			ps.setString(1, t.getUrlName());
+			ps.setString(2, t.getUrlId());
 
 			int i = ps.executeUpdate();
 			if (i == 1) {

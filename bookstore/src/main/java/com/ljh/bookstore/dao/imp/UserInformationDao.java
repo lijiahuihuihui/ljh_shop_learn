@@ -28,16 +28,17 @@ public class UserInformationDao implements  IBaseDao<UserInformationDomain>{
 			   UserInformationDomain m = new UserInformationDomain() ; 
 		        if(rs.next()){  
 		        	
-		        	m.setUser_id(rs.getString("user_id"));
-		        	m.setUser_name(rs.getString("user_name"));
-		        	m.setUser_sex(rs.getString("user_sex"));
-		        	m.setUser_age(rs.getInt("user_age"));
-		        	m.setUser_password(rs.getString("user_password"));
-		        	m.setUser_address(rs.getString("user_address"));
-		        	m.setUser_number(rs.getInt("user_number"));
+		        	m.setUserId(rs.getString("user_id"));
+		        	m.setUserName(rs.getString("user_name"));
+		        	m.setUserSex(rs.getString("user_sex"));
+		        	m.setUserAge(rs.getInt("user_age"));
+		        	m.setUserPassword(rs.getString("user_password"));
+		        	m.setUserAddress(rs.getString("user_address"));
+		        	m.setUserNumber(rs.getInt("user_number"));
+		        	return m ; 
 		        	
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -62,12 +63,12 @@ public class UserInformationDao implements  IBaseDao<UserInformationDomain>{
 
 			PreparedStatement ps = con.prepareStatement(insert);
 			ps.setString(1, UUID.randomUUID().toString());
-			ps.setString(2, t.getUser_name());
-			ps.setString(3, t.getUser_sex());
-			ps.setDouble(4, t.getUser_age());
-			ps.setString(5, t.getUser_password());
-			ps.setString(6, t.getUser_address());
-			ps.setDouble(7, t.getUser_number());
+			ps.setString(2, t.getUserName());
+			ps.setString(3, t.getUserSex());
+			ps.setDouble(4, t.getUserAge());
+			ps.setString(5, t.getUserPassword());
+			ps.setString(6, t.getUserAddress());
+			ps.setDouble(7, t.getUserNumber());
 			ps.setTimestamp(8, new Timestamp(System.currentTimeMillis()));
 
 			int i = ps.executeUpdate();
@@ -108,13 +109,13 @@ public class UserInformationDao implements  IBaseDao<UserInformationDomain>{
 		        while(rs.next()){  
 		        	UserInformationDomain m = new UserInformationDomain() ; 
 		        	
-		        	m.setUser_id(rs.getString("user_id"));
-		        	m.setUser_name(rs.getString("user_name"));
-		        	m.setUser_sex(rs.getString("user_sex"));
-		        	m.setUser_age(rs.getInt("user_age"));
-		        	m.setUser_password(rs.getString("user_password"));
-		        	m.setUser_address(rs.getString("user_address"));
-		        	m.setUser_number(rs.getInt("user_number"));
+		        	m.setUserId(rs.getString("user_id"));
+		        	m.setUserName(rs.getString("user_name"));
+		        	m.setUserSex(rs.getString("user_sex"));
+		        	m.setUserAge(rs.getInt("user_age"));
+		        	m.setUserPassword(rs.getString("user_password"));
+		        	m.setUserAddress(rs.getString("user_address"));
+		        	m.setUserNumber(rs.getInt("user_number"));
 		        	
 		        	ms.add(m) ; 
 		        }
@@ -172,8 +173,8 @@ public class UserInformationDao implements  IBaseDao<UserInformationDomain>{
 
 			PreparedStatement ps = con.prepareStatement(update);
 			
-			ps.setString(1, t.getUser_name());
-			ps.setString(2, t.getUser_id());
+			ps.setString(1, t.getUserName());
+			ps.setString(2, t.getUserId());
 
 			int i = ps.executeUpdate();
 			if (i == 1) {

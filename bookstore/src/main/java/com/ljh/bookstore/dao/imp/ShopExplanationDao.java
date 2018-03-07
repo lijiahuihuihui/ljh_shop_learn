@@ -28,12 +28,13 @@ public class ShopExplanationDao implements  IBaseDao<ShopExplanationDomain>{
 			   ShopExplanationDomain m = new ShopExplanationDomain() ; 
 		        if(rs.next()){  
 		        	
-		        	m.setShop_problem_id(rs.getString("shop_problem_id"));
-		        	m.setShop_problem(rs.getString("shop_problem"));
-		        	m.setShop_answer(rs.getString("shop_answer"));
+		        	m.setShopProblemId(rs.getString("shop_problem_id"));
+		        	m.setShopProblem(rs.getString("shop_problem"));
+		        	m.setShopAnswer(rs.getString("shop_answer"));
+		        	return m ; 
 		        	
 		        }
-		        return m ; 
+		        
 			 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -58,8 +59,8 @@ public class ShopExplanationDao implements  IBaseDao<ShopExplanationDomain>{
 
 			PreparedStatement ps = con.prepareStatement(insert);
 			ps.setString(1, UUID.randomUUID().toString());
-			ps.setString(2, t.getShop_problem());
-			ps.setString(3, t.getShop_answer());
+			ps.setString(2, t.getShopProblem());
+			ps.setString(3, t.getShopAnswer());
 			ps.setTimestamp(4, new Timestamp(System.currentTimeMillis()));
 
 			int i = ps.executeUpdate();
@@ -100,9 +101,9 @@ public class ShopExplanationDao implements  IBaseDao<ShopExplanationDomain>{
 		        while(rs.next()){  
 		        	ShopExplanationDomain m = new ShopExplanationDomain() ; 
 		        	
-		        	m.setShop_problem_id(rs.getString("shop_problem_id"));
-		        	m.setShop_problem(rs.getString("shop_problem"));
-		        	m.setShop_answer(rs.getString("shop_answer"));
+		        	m.setShopProblemId(rs.getString("shop_problem_id"));
+		        	m.setShopProblem(rs.getString("shop_problem"));
+		        	m.setShopAnswer(rs.getString("shop_answer"));
 		        	
 		        	ms.add(m) ; 
 		        }
@@ -160,8 +161,8 @@ public class ShopExplanationDao implements  IBaseDao<ShopExplanationDomain>{
 
 			PreparedStatement ps = con.prepareStatement(update);
 			
-			ps.setString(1, t.getShop_problem());
-			ps.setString(2, t.getShop_problem_id());
+			ps.setString(1, t.getShopProblem());
+			ps.setString(2, t.getShopProblemId());
 
 			int i = ps.executeUpdate();
 			if (i == 1) {

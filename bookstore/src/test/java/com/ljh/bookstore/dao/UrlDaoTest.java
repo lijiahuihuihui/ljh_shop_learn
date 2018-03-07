@@ -22,9 +22,9 @@ public class UrlDaoTest {
 	@Test
 	public void testInsert() {
 		UrlDomain t = new UrlDomain() ; 		
-        t.setUrl_name("vdsvk_"+System.currentTimeMillis());
+        t.setUrlName("vdsvk_"+System.currentTimeMillis());
         t.setUrl("ewfw");
-        t.setUrl_sort(384972);
+        t.setUrlSort(384972);
         
 		boolean I = dao.insert(t) ; 
 		
@@ -52,8 +52,8 @@ public class UrlDaoTest {
 	@Test
 	public void testUpdate() {
 		UrlDomain t = new UrlDomain() ; 
-		t.setUrl_id("b4049616-11d2-4e7c-96ff-f78ef54642d4");
-        t.setUrl_name("weerf");
+		t.setUrlId("b4049616-11d2-4e7c-96ff-f78ef54642d4");
+        t.setUrlName("weerf");
         
 		boolean i = dao.update(t) ; 
 		System.out.println("i = " +i);
