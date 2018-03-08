@@ -4,7 +4,106 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
+	
+	<!-- user start -->
+	<servlet>
+		<servlet-name>UserSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.UserSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserSaveController</servlet-name>
+		<url-pattern>/manage/user/save</url-pattern>
+	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>UserManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.UserManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserManagerController</servlet-name>
+		<url-pattern>/manage/user/manager</url-pattern>
+	</servlet-mapping>
+	<!-- user end -->
+	
+	<!-- car start -->
+	<servlet>
+		<servlet-name>CarSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.CarSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CarSaveController</servlet-name>
+		<url-pattern>/manage/car/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CarManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.CarManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CarManagerController</servlet-name>
+		<url-pattern>/manage/car/manager</url-pattern>
+	</servlet-mapping>
+	<!-- car end -->
+	
+	<!-- message start -->
+	<servlet>
+		<servlet-name>MessageSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.MessageSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MessageSaveController</servlet-name>
+		<url-pattern>/manage/message/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MessageManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.MessageManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MessageManagerController</servlet-name>
+		<url-pattern>/manage/message/manager</url-pattern>
+	</servlet-mapping>
+	<!-- message end -->
+	
+	<!-- consumer start -->
+	<servlet>
+		<servlet-name>ConsumerSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.ConsumerSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConsumerSaveController</servlet-name>
+		<url-pattern>/manage/consumer/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ConsumerManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.ConsumerManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConsumerManagerController</servlet-name>
+		<url-pattern>/manage/consumer/manager</url-pattern>
+	</servlet-mapping>
+	<!-- consumer end -->
+	
+	<!-- login start -->
+	<servlet>
+		<servlet-name>LoginSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.LoginSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginSaveController</servlet-name>
+		<url-pattern>/manage/login/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.LoginManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginManagerController</servlet-name>
+		<url-pattern>/manage/login/manager</url-pattern>
+	</servlet-mapping>
+	<!-- login end -->
 
 	<!-- href start -->
 	<servlet>
@@ -25,6 +124,147 @@
 		<url-pattern>/manage/href/manager</url-pattern>
 	</servlet-mapping>
 	<!-- href end -->
+	
+	<!-- porder start -->
+	<servlet>
+		<servlet-name>PorderSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.PorderSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PorderSaveController</servlet-name>
+		<url-pattern>/manage/porder/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PorderManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.PorderManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PorderManagerController</servlet-name>
+		<url-pattern>/manage/porder/manager</url-pattern>
+	</servlet-mapping>
+	<!-- porder end -->
+	
+	<!-- order start -->
+	<servlet>
+		<servlet-name>OrderSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.OrderSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OrderSaveController</servlet-name>
+		<url-pattern>/manage/order/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>OrderManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.OrderManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OrderManagerController</servlet-name>
+		<url-pattern>/manage/order/manager</url-pattern>
+	</servlet-mapping>
+	<!-- order end -->
+	
+	<!-- manage start -->
+	<servlet>
+		<servlet-name>ManageSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.ManageSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageSaveController</servlet-name>
+		<url-pattern>/manage/manage/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManageManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.ManageManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageManagerController</servlet-name>
+		<url-pattern>/manage/manage/manager</url-pattern>
+	</servlet-mapping>
+	<!-- manage end -->
+	
+	<!-- store start -->
+	<servlet>
+		<servlet-name>StoreSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.StoreSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StoreSaveController</servlet-name>
+		<url-pattern>/manage/store/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>StoreManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.StoreManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StoreManagerController</servlet-name>
+		<url-pattern>/manage/store/manager</url-pattern>
+	</servlet-mapping>
+	<!-- store end -->
+	
+	<!-- role start -->
+	<servlet>
+		<servlet-name>RoleSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.RoleSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleSaveController</servlet-name>
+		<url-pattern>/manage/role/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RoleManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.RoleManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleManagerController</servlet-name>
+		<url-pattern>/manage/role/manager</url-pattern>
+	</servlet-mapping>
+	<!-- role end -->
+	
+	<!-- advertisement start -->
+	<servlet>
+		<servlet-name>AdvertisementSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.AdvertisementSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdvertisementSaveController</servlet-name>
+		<url-pattern>/manage/advertisement/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdvertisementManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.AdvertisementManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdvertisementManagerController</servlet-name>
+		<url-pattern>/manage/advertisement/manager</url-pattern>
+	</servlet-mapping>
+	<!-- advertisement end -->
+	
+	<!-- explanation start -->
+	<servlet>
+		<servlet-name>ExplanationSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.ExplanationSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExplanationSaveController</servlet-name>
+		<url-pattern>/manage/explanation/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ExplanationManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.ExplanationManagerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExplanationManagerController</servlet-name>
+		<url-pattern>/manage/explanation/manager</url-pattern>
+	</servlet-mapping>
+	<!-- explanation end -->
+	
 
 	<!-- menu start -->
 	<servlet>
@@ -44,9 +284,7 @@
 		<servlet-name>MenuManagerController</servlet-name>
 		<url-pattern>/manage/menu/manager</url-pattern>
 	</servlet-mapping>
-
 	<!-- menu end -->
-
 
 	<servlet>
 		<servlet-name>LoginController</servlet-name>
@@ -66,86 +304,44 @@
 		<url-pattern>/login-validate</url-pattern>
 	</servlet-mapping>
 
+	<!-- shop manage start -->
 	<servlet>
-		<servlet-name>OrderLIstController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.OrderLIstController</servlet-class>
+		<servlet-name>ShopSaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.ShopSaveController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>OrderLIstController</servlet-name>
-		<url-pattern>/orderlist</url-pattern>
+		<servlet-name>ShopSaveController</servlet-name>
+		<url-pattern>/manage/shop/save</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
-		<servlet-name>ShopLIstController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.ShopLIstController</servlet-class>
+		<servlet-name>ShopManagerController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.ShopManagerController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>ShopLIstController</servlet-name>
-		<url-pattern>/shoplist</url-pattern>
+		<servlet-name>ShopManagerController</servlet-name>
+		<url-pattern>/manage/shop/manager</url-pattern>
 	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>UserLIstController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.UserLIstController</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>UserLIstController</servlet-name>
-		<url-pattern>/userlist</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>RepertoryController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.RepertoryController</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>RepertoryController</servlet-name>
-		<url-pattern>/repertory</url-pattern>
-	</servlet-mapping>
-
+	
 	<servlet>
 		<servlet-name>ShopClassifyController</servlet-name>
 		<servlet-class>com.ljh.bookstore.controller.ShopClassifyController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ShopClassifyController</servlet-name>
-		<url-pattern>/shopclassify</url-pattern>
+		<url-pattern>/manage/shop/classify</url-pattern>
 	</servlet-mapping>
-
+	
 	<servlet>
-		<servlet-name>AddShopController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.AddShopController</servlet-class>
+		<servlet-name>ShopClassifySaveController</servlet-name>
+		<servlet-class>com.ljh.bookstore.controller.ShopClassifySaveController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>AddShopController</servlet-name>
-		<url-pattern>/addshop</url-pattern>
+		<servlet-name>ShopClassifySaveController</servlet-name>
+		<url-pattern>/manage/shop/classify_save</url-pattern>
 	</servlet-mapping>
+	<!-- shop manage end -->
 
-	<servlet>
-		<servlet-name>SystemController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.SystemController</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>SystemController</servlet-name>
-		<url-pattern>/system</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>MessageController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.MessageController</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>MessageController</servlet-name>
-		<url-pattern>/message</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>CommentController</servlet-name>
-		<servlet-class>com.ljh.bookstore.controller.CommentController</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>CommentController</servlet-name>
-		<url-pattern>/comment</url-pattern>
-	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>SignController</servlet-name>

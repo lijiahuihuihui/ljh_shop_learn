@@ -35,17 +35,12 @@
 	<div class="nav-navicon admin-main admin-sidebar">
 		<div class="sideMenu">
 			<ul style="display: block">
-			    <li><a href="${pageContext.request.contextPath}/manage/left_menu.jsp" target="iframeLeft">菜单管理</a></li>
-				<li><a href="/shoplist" target="iframeContent">商品列表</a></li>
-				<li><a href="/orderlist" target="iframeContent">订单列表</a></li>
-				<li class="func" dataType='html' dataLink='msn.htm'	iconImg='images/msn.gif'><a href="/addshop" target="iframeContent">添加商品</a></li>
-				<li><a href="/shopclassify" target="iframeContent">商品分类</a></li>
-				<li><a href="/comment" target="iframeContent">用户评论</a></li>
-				<li><a href="/repertory" target="iframeContent">库存管理 </a></li>
-				<li><a href="/userlist" target="iframeContent">会员列表</a></li>
-				<li><a href="/message" target="iframeContent">信息通知</a></li>
-				<li><a href="/system" target="iframeContent">系统设置</a></li>
-				<li><a href="${pageContext.request.contextPath}/manage/left_href.jsp" target="iframeLeft">友情链接</a></li>
+				<li><a href="${pageContext.request.contextPath}/manage/left_shop.jsp" target="iframeLeft">商品管理</a></li>
+			    <li><a href="${pageContext.request.contextPath}/manage/left_user.jsp" target="iframeLeft">会员管理</a></li>
+			    <li><a href="${pageContext.request.contextPath}/manage/left_order.jsp" target="iframeLeft">订单管理</a></li>
+			    <li><a href="${pageContext.request.contextPath}/manage/left_store.jsp" target="iframeLeft">店铺管理</a></li>
+			    <li><a href="${pageContext.request.contextPath}/manage/left_system.jsp" target="iframeLeft">系统管理</a></li>
+			    <li><a href="${pageContext.request.contextPath}/manage/left_interface.jsp" target="iframeLeft">界面管理</a></li>
 			</ul>
 
 		</div>
